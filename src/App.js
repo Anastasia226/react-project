@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Header";
+import Footer from "./Footer";
+import Nav from "./Nav";
+import React from "react";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Nav />
+      <div className="content">
+        <img
+          class="img-content"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ikea_logo.svg/1280px-Ikea_logo.svg.png"
+        ></img>
+        <div className="info-user">
+          <div className="name">Bagaeva NAstya</div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
